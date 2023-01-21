@@ -1,0 +1,26 @@
+.label-style {
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.form {
+    width: 500px;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.fieldset {
+    border: 3px double #ccc;
+    border-radius: 3px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f7f7f7;
+}
+
+.legend {
+    background: rgb(115, 126, 228);
+    border-radius: 3px;
+    padding: 5px 10px;
+}

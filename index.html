@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>форми</title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <h3>Форми на сайті</h3>
+
+            <form class="form" ction="#" name="MyForm">
+                <fieldset class="fieldset" disabled>
+                    <legend class="legend">Kонтакти</legend>
+                    <p>
+                        <label class="label-style" for="name">Вкажіть ім'я</label>
+                        <input id="name" type="text" placeholder="Ваше ім'я" required autofocus>
+                    </p>
+                    <p>
+                        <label class="label-style" for="mail" >Вкажіть email</label>
+                        <input id="mail" type="email" placeholder="email" required>
+                    </p>
+                    <p>
+                        <label class="label-style" for="phone" >Вкажіть телефон</label>
+                        <input id="phone"
+                        pattern="+\d{3}\s\d{2}\s\d{3}\s\d{2}\s\d{2}"
+                         type="tel" placeholder="+375 23 111 11 11" maxlength="60">
+                    </p>
+                </fieldset>
+                <fieldset class="fieldset" title="введіть без помилок">
+                    <legend class="legend">Ще контакти</legend>
+                    <p>
+                        <label class="label-style" for="phone" >Вкажіть номер кредитної карти</label>
+                        <input id="phone"
+                        pattern="\d{4}[\-|\s]?\d{4}[\-|\s]?\d{4}[\-|\s]?\d{4}"
+                        type="tel" placeholder="1234 1234 1234 1234">
+                    </p>
+                    <p>
+                        <label class="label-style" for="web" >Вкажіть сайт</label>
+                        <input id="web" type="url" placeholder="якщо є">
+                    </p>
+                    <p>
+                        <label class="label-style" for="city">Вкажіть місто</label>
+                        <select name="city" id="city" size="4" multiple>
+                            <optgroup label="група" disabled>
+                                <option value="city10">Баштанка</option>
+                                <option value="city11">Житомир</option>
+                            </optgroup>
+                            <option disabled>Виберіть</optiion>
+                            <option value="city1">Миколаїв</option>
+                            <option value="city2">Херсон</option>
+                            <option value="city3">Запоріжжя</option>
+                            <option value="city4" selected>Кривий ріг</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend class="legend">Контакти2</legend>
+                    <p>
+                        <label class="label-style" for="num" >Ваша вага (кг):</label>
+                        <input id="num" type="number" value="35" min="35" max="100" step="5">
+                    </p>
+                    <p>
+                        <label class="label-style" for="col" >Вкажіть колір ваших очей</label>
+                        <input id="col" type="color" value="#d80000">
+                    </p>
+                    <p>
+                        <label class="label-style" for="ran" >Ваша зріст (см):</label>
+                        <input oninput="out.value=(ran.value);out2.value=(ran.value*10)" id="ran" type="range" value="50" min="0" max="250">
+                        <br><br>
+                        <label class="label-style">Ваша зріст дорівнює</label>
+                        <output id="out">100</output> сантиметрів
+                        <br><br>
+                        <label class="label-style">або</label>
+                        <output id="out2">1000</output> мл
+                    </p>
+                    <p>
+                        <label class="label-style" for="search">Введіть запит</label>
+                        <input id="search" type="search" placeholder="що цікаво">
+                    </p>
+                    <p>
+                        <label class="label-style" for="pass">Вкажіть пароль</label>
+                        <input id="pass" type="password" placeholder="пароль">
+                    </p>
+                    <p>
+                        <label  class="label-style" for="text">Повідомлення</label>
+                        <textarea name="text" maxlength="100" id="text" cols="30" rows="10" placeholder="Введіть повідомлення">Ілюша</textarea>
+                    </p>
+                    <p>
+                        <label class="label-style" for="sex">Вкажіть вашу стать</label>
+                        <input id="sex" type="radio" name="sex"> Жіноча
+                        <input type="radio" name="sex"> Чоловіча
+                    </p>
+                    <p>
+                        <label class="label-style" for="dr" >Вкажіть ДР</label>
+                        <input id="dr" max="1995-08-30" value="1995-08-30" type="date" name="birthday">
+                    </p>
+                    <p>
+                        <label class="label-style" for="dr" >Вкажіть локальний час</label>
+                        <input id="dr" max="1995-08-30" value="1995-08-30T09:30" type="datetime-local" name="birthday">
+                    </p>
+                    <p>
+                        <label class="label-style" for="time" >Вкажіть час</label>
+                        <input id="time" max="08:00" value="09:00" type="time" name="time">
+                    </p>
+                    <p>
+                        <label class="label-style" for="m" >Вкажіть місяць</label>
+                        <input id="m" max="2015-06" value="2015-06" type="month" name="time">
+                    </p>
+                    <p>
+                        <label class="label-style" for="sub" >Отримувати листи по</label>
+                        <input id="sub" type="checkbox" name="sub" checked> Усі
+                        <input type="checkbox" name="check"> Бізнесу
+                        <input type="checkbox" name="check"> Акціям
+                        <input type="checkbox" name="check"> Цінним паперам
+                    </p>
+                    <p>
+                        <input type="submit" value="відправити"> <input type="reset" value="очистити">
+                    </p>
+                </fieldset>
+            </form>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
